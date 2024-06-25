@@ -21,9 +21,10 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">job title</th>
-                        <th scope="col">description</th>
-                        <th scope="col">location</th>
+                        <th scope="col">job description</th>
+                        <th scope="col">job location</th>
                         <th scope="col">job type</th>
+                        <th scope="col">action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,17 +34,7 @@
                         <td>Otto</td>
                         <td>@mdo</td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+
                 </tbody>
             </table>
 
