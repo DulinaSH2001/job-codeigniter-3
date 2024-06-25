@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col m-5">
-                <a href="http://localhost:3000/application/views/createjob.php" class="btn btn-outline-primary">Add
+                <a href="http://localhost/jobstore/index.php/crud/create" class="btn btn-outline-primary">Add
                     Job</a>
             </div>
             <table class="table">
@@ -28,12 +28,23 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php $count = 0;?>
+                    <?php foreach($jobs as $job){?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+
+                        <th scope="row"><?php echo ++$count; ?></th>
+                        <td><?php echo $job->job_title; ?> </td>
+                        <td><?php echo $job->job_desc; ?> </td>
+                        <td><?php echo $job->job_location; ?> </td>
+                        <td><?php echo $job->job_type; ?> </td>
+                        <td>
+                            <a href="http://localhost/jobstore/index.php/crud/edit/<?php echo $job->jobid; ?>"
+                                class="btn btn-outline-primary">Edit</a>
+                            <a href="http://localhost/jobstore/index.php/crud/delete/<?php echo $job->jobid; ?>"
+                                class="btn btn-outline-danger">Delete</a>
+
                     </tr>
+                    <?php }?>
 
                 </tbody>
             </table>

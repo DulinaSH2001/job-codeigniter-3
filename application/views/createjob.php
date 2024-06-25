@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="form-container">
-                <form action="" method="post">
+                <form action="http://localhost/jobstore/index.php/crud/save" method="post">
                     <div class="mb-3">
                         <label class="form-label">Job Title</label>
                         <input type="text" class="form-control" name="title">
